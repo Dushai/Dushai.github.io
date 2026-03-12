@@ -1,0 +1,78 @@
+.kruh {
+    width: 30px;
+    /* šírka */
+    height: 30px;
+    /* výška */
+    background-color: red;
+    /* farba kruhu */
+    border-radius: 50%;
+    /* toto robí z obdĺžnika kruh */
+    position: absolute;
+    top: 500px;
+    left: 190px;
+    animation-name: semafor;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes semafor {
+    0% {
+        background-color: red;
+    }
+
+    100% {
+        background-color: green;
+    }
+}
+
+
+
+
+
+
+
+@keyframes anim {
+    0% {
+        top: 500px;
+    }
+
+    100% {
+        top: 450px;
+    }
+}
+
+
+p img {
+    position: absolute;
+    top: 500px;
+    left: 110px;
+    width: 70px;
+    height: 100px;
+    animation-name: anim, anim2, anim3;
+    animation-duration: 1s, 1s, 1s;
+    animation-delay: 0s, 2s, 3s;
+    animation-fill-mode: forwards, forwards, forwards;
+
+}
+
+
+@keyframes anim2 {
+    0% {
+        top: 450px;
+    }
+
+    100% {
+        top: 120px;
+    }
+}
+
+@keyframes anim3 {
+    0% {
+        left: 110px;
+    }
+
+    100% {
+        left: 350px;
+    }
+}
